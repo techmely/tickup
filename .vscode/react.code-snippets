@@ -1,0 +1,96 @@
+{
+  "useState": {
+    "prefix": "uss",
+    "body": ["const [${1}, set${1/(.*)/${1:/capitalize}/}] = useState($2);$0"],
+    "description": "React useState() hook"
+  },
+  "useEffect": {
+    "prefix": "uef",
+    "body": ["useEffect(() => {", "\t$1", "", "}, [${2}]);$0"],
+    "description": "React useEffect() hook"
+  },
+  "useEffect with cleanup func": {
+    "prefix": "uefc",
+    "body": [
+      "useEffect(() => {",
+      "\t",
+      "\n$2",
+      "\treturn () => {",
+      "\t\t",
+      "\t}",
+      "}, [${1}]);$0"
+    ],
+    "description": "React useEffect() hook"
+  },
+  "useContext": {
+    "prefix": "uct",
+    "body": ["const $1 = useContext($2);$0"],
+    "description": "React useContext() hook"
+  },
+  "useCallback": {
+    "prefix": "ucb",
+    "body": [
+      "const ${1:memoizedCallback} = useCallback(",
+      "\t() => {",
+      "\t\t${2:doSomething}(${3:a}, ${4:b})",
+      "\t},",
+      "\t[${5:a}, ${6:b}],",
+      ");$0"
+    ],
+    "description": "React useCallback() hook"
+  },
+  "useMemo": {
+    "prefix": "umm",
+    "body": [
+      "const ${1:memoizedValue} = useMemo(() => ${2:computeExpensiveValue}(${3:a}, ${4:b}), [${5:a}, ${6:b}]);$0"
+    ],
+    "description": "React useMemo() hook"
+  },
+  "useRef": {
+    "prefix": "uref",
+    "body": ["const $1 = useRef($2);$0"],
+    "description": "React useRef() hook"
+  },
+  "useReducer": {
+    "prefix": "ured",
+    "body": [
+      "const [${1:state},${2: dispatch}] = useReducer(${3:reducer}, ${4:initialArg}, ${5:init});"
+    ],
+    "description": "React useReducer() hook"
+  },
+  "Export custom hooks": {
+    "prefix": "exch",
+    "body": ["export function ${1:${TM_FILENAME_BASE}}() {", " $2", "}"],
+    "description": "export custom hooks"
+  },
+  "Export const component": {
+    "prefix": "exconst",
+    "body": [
+      "import React from 'react';",
+      "",
+      "type Props = {}",
+      "",
+      "export const ${1:${TM_FILENAME_BASE}}: React.FC<Props> = props => {",
+      "",
+      "  return <div>$2</div>;",
+      "};"
+    ],
+    "description": "Creates a React Arrow Function Component with ES7 module system and TypeScript interface"
+  },
+  "Export default component": {
+    "prefix": "exdef",
+    "body": [
+      "import React from 'react';",
+      "",
+      "type Props = {}",
+      "",
+      "const ${1:${TM_FILENAME_BASE}}: React.FC<Props> = props => {",
+      "",
+      "  return <div>$2</div>;",
+      "};",
+      "",
+      "export default ${1:${TM_FILENAME_BASE}};"
+    ],
+    "description": "Creates a React Arrow Function Component with ES7 module system and TypeScript interface"
+  }
+}

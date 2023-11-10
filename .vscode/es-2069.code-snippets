@@ -1,0 +1,35 @@
+{
+  "Import type": {
+    "prefix": "impt",
+    "body": ["import type { $2 } from '$1'"],
+    "description": "Import type"
+  },
+  "Console log": {
+    "prefix": "clg",
+    "body": ["console.log($1)"],
+    "description": "Console log"
+  },
+  "Console error": {
+    "prefix": "cle",
+    "body": ["console.error($1)"],
+    "description": "Console error"
+  },
+  "Console Count": {
+    "prefix": "clc",
+    "body": ["console.count($1)"],
+    "description": "Console Count"
+  },
+  "Export * from XXX": {
+    "prefix": "exs",
+    "body": ["export * from './${0}';"]
+  },
+  "Export * from XXX + Type": {
+    "prefix": "exst",
+    "body": ["export * from './${0}';", "export * from './${0}.types';"]
+  },
+  "Export custom hooks": {
+    "prefix": "exch",
+    "body": ["export function ${1:${TM_FILENAME_BASE}}() {", " $2", "}"],
+    "description": "export custom hooks"
+  }
+}
