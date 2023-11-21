@@ -1,36 +1,55 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Fullstack ClickUp Clone: Next.js 14, Clerk, Sentry, Radix UI, GSAP, PlanetScale, Stripe, Tailwind, MySQL, Playwright
 
-## Getting Started
+![image](https://github.com/techmely/tickup/blob/main/public/images/Thumbnail.png)
 
-First, run the development server:
+Repo này là kết quả của [Series Build Product Fast](https://www.youtube.com/watch?v=XQzO26ak38Y&list=PLwJIrGynFq9B9_yPQjLdFj6Ziv9jRmCd5), nếu bạn không có thời gian để xem videos, hãy Star repo và clone về để dùng cho riêng bạn
+
+## Tính năng chính
+
+- Auth
+- Organization/Workspaces
+- Quản lý mục tiêu tổng, danh sách công việc
+- Nhóm có thể chat realtime trên Ticket/Issue đang hoạt động
+- Sử dụng AI để tạo tự động danh sách công việc hoặc tóm tắt cuộc hội thoại
+- Thanh toán tiền + nâng cấp subscriptions
+- Xây dựng các landing pages
+- Tracking user events với UTM
+........ Sẽ cập nhật thêm
+
+## Công nghệ triển khai
+- [NextJs](https://nextjs.org) 14(App router + Server actions)
+- CSS: [TailwindCss](https://tailwindcss.com)
+- AI: [OpenAI](https://openai.com)
+- Validation: Dùng [Valibot](https://valibot.dev/) để validate forms hoặc các đầu vào input nói chung
+- Error Handler: [Sentry](https://sentry.io) capture lại các lỗi, và có ErrorBoundary tránh lỗi xảy ra ở Client
+- Payment/Subscriptions: [Stripe](https://stripe.com/)
+- Database: [PlanetScale](https://planetscale.com) - MySql, [Kysely](https://github.com/kysely-org/kysely) for query builder
+- Deploy: [Vercel Edge](https://vercel.com/docs/edge-network/overview)
+- Animation: [Gsap](https://gsap.com) hoặc [AnimateJs](https://animejs.com)
+- Testing: Sử dụng Unit Test với [Vitest](https://vitest.dev) + e2e testing với [Playwright](https://playwright.dev)
+
+## Trải nghiệm phát triển
+- Sử dụng Gitflow + Semantic commit + Rabbit AI để tự review/update phần code
+- Spell checker VsCode Extension để cảnh báo là gõ chữ sai
+- 
+
+## Hướng dẫn sử dụng
+
+1. Install deps với `yarn install`
+2. Đổi `.env.example` thành `.env` và thêm các secret keys vào
 
 ```bash
-npm run dev
-# or
+NEXT_PUBLIC_CLERK_PUBLISHABLE_KEY=
+
+CLERK_SECRET_KEY=
+```
+3. Khởi động app và tận hưởng
+
+```bash
 yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## License
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
-
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+MIT
