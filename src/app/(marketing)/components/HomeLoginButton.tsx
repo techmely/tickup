@@ -6,13 +6,12 @@ import React from "react";
 
 const HomeLoginButton: React.FC = (props) => {
   const router = useRouter();
-
-  const navigateToLoginPage = () => {
+  const navigateToLogin = () => {
     router.push("/login");
   };
   return (
-    <Button size="md" className="px-10 block" onClick={navigateToLoginPage}>
-      Go to the login page
+    <Button size="md" className="px-10 block" onClick={navigateToLogin}>
+      Go to login page
     </Button>
   );
 };

@@ -1,7 +1,8 @@
+import { SignUp } from "@clerk/nextjs";
 import React from "react";
 
 const SignUpPage: React.FC = (props) => {
-  return <div>SignUp Page</div>;
+  return <SignUp redirectUrl="/dashboard" />;
 };
 
 export default SignUpPage;
