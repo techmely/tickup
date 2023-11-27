@@ -10,8 +10,12 @@ const HomeLoginButton: React.FC = (props) => {
     router.push("/login");
   };
   return (
-    <Button size="md" className="px-10 block" onClick={navigateToLogin}>
-      Go to login page
+    <Button
+      type="button"
+      className="relative h-[43px] bg-[#e9ebf0] text-gray-900 rounded-[9px] shadow-[0px_10px_25px_#7b68ee66] hover:bg-gray-300"
+      onClick={navigateToLogin}
+    >
+      Login
     </Button>
   );
 };
