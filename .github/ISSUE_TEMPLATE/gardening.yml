@@ -1,0 +1,25 @@
+name: Gardening
+description: Dependencies, cleanup, reworking of code
+title: "[Garden 🍌🥦🍏]: "
+labels: ["Type: gardening", "Status: Triage"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for taking the time to fill this out!
+  - type: textarea
+    id: describe-need
+    attributes:
+      label: Describe the need
+      description: What do you want to happen?
+      placeholder: Describe the gardening need here.
+    validations:
+      required: true
+  - type: checkboxes
+    id: terms
+    attributes:
+      label: Code of Conduct
+      description: By submitting this issue, you agree to follow our [Code of Conduct](../../docs/CODE_OF_CONDUCT.md)
+      options:
+        - label: I agree to follow this project's Code of Conduct
+          required: true

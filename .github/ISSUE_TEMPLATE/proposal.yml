@@ -1,0 +1,9 @@
+name: Proposal 📜
+description: Propose a new feature, or a change to something existing
+title: "[Proposal]: "
+labels: ["proposal 📜"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for taking the time to fill this out!
