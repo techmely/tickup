@@ -21,16 +21,16 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@biomejs/biome@npm:1.3.3":
-  version: 1.3.3
-  resolution: "@biomejs/biome@npm:1.3.3"
+"@biomejs/biome@npm:1.4.0":
+  version: 1.4.0
+  resolution: "@biomejs/biome@npm:1.4.0"
   dependencies:
-    "@biomejs/cli-darwin-arm64": "npm:1.3.3"
-    "@biomejs/cli-darwin-x64": "npm:1.3.3"
-    "@biomejs/cli-linux-arm64": "npm:1.3.3"
-    "@biomejs/cli-linux-x64": "npm:1.3.3"
-    "@biomejs/cli-win32-arm64": "npm:1.3.3"
-    "@biomejs/cli-win32-x64": "npm:1.3.3"
+    "@biomejs/cli-darwin-arm64": "npm:1.4.0"
+    "@biomejs/cli-darwin-x64": "npm:1.4.0"
+    "@biomejs/cli-linux-arm64": "npm:1.4.0"
+    "@biomejs/cli-linux-x64": "npm:1.4.0"
+    "@biomejs/cli-win32-arm64": "npm:1.4.0"
+    "@biomejs/cli-win32-x64": "npm:1.4.0"
   dependenciesMeta:
     "@biomejs/cli-darwin-arm64":
       optional: true
@@ -46,48 +46,48 @@ __metadata:
       optional: true
   bin:
     biome: bin/biome
-  checksum: 6e9b9dfbf710898a855d149565f4f1536fb558134ede0934d3d5b06456fa4a91a77a97392f2c8f8bc7f17b7f13e7af464515a3ff858a53d759ca24a38e9e551b
+  checksum: a2a8172bbb60d2fe3edc835aaace10d61122cd81f0c511eea37eb1166e5cfa30b5efcd0dad5f3c224fd4420eb6632363545820c3cac5d84944b62fb5517cb668
   languageName: node
   linkType: hard
 
-"@biomejs/cli-darwin-arm64@npm:1.3.3":
-  version: 1.3.3
-  resolution: "@biomejs/cli-darwin-arm64@npm:1.3.3"
+"@biomejs/cli-darwin-arm64@npm:1.4.0":
+  version: 1.4.0
+  resolution: "@biomejs/cli-darwin-arm64@npm:1.4.0"
   conditions: os=darwin & cpu=arm64
   languageName: node
   linkType: hard
 
-"@biomejs/cli-darwin-x64@npm:1.3.3":
-  version: 1.3.3
-  resolution: "@biomejs/cli-darwin-x64@npm:1.3.3"
+"@biomejs/cli-darwin-x64@npm:1.4.0":
+  version: 1.4.0
+  resolution: "@biomejs/cli-darwin-x64@npm:1.4.0"
   conditions: os=darwin & cpu=x64
   languageName: node
   linkType: hard
 
-"@biomejs/cli-linux-arm64@npm:1.3.3":
-  version: 1.3.3
-  resolution: "@biomejs/cli-linux-arm64@npm:1.3.3"
+"@biomejs/cli-linux-arm64@npm:1.4.0":
+  version: 1.4.0
+  resolution: "@biomejs/cli-linux-arm64@npm:1.4.0"
   conditions: os=linux & cpu=arm64
   languageName: node
   linkType: hard
 
-"@biomejs/cli-linux-x64@npm:1.3.3":
-  version: 1.3.3
-  resolution: "@biomejs/cli-linux-x64@npm:1.3.3"
+"@biomejs/cli-linux-x64@npm:1.4.0":
+  version: 1.4.0
+  resolution: "@biomejs/cli-linux-x64@npm:1.4.0"
   conditions: os=linux & cpu=x64
   languageName: node
   linkType: hard
 
-"@biomejs/cli-win32-arm64@npm:1.3.3":
-  version: 1.3.3
-  resolution: "@biomejs/cli-win32-arm64@npm:1.3.3"
+"@biomejs/cli-win32-arm64@npm:1.4.0":
+  version: 1.4.0
+  resolution: "@biomejs/cli-win32-arm64@npm:1.4.0"
   conditions: os=win32 & cpu=arm64
   languageName: node
   linkType: hard
 
-"@biomejs/cli-win32-x64@npm:1.3.3":
-  version: 1.3.3
-  resolution: "@biomejs/cli-win32-x64@npm:1.3.3"
+"@biomejs/cli-win32-x64@npm:1.4.0":
+  version: 1.4.0
+  resolution: "@biomejs/cli-win32-x64@npm:1.4.0"
   conditions: os=win32 & cpu=x64
   languageName: node
   linkType: hard
@@ -1289,14 +1289,14 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@types/react@npm:^18.2.38":
-  version: 18.2.38
-  resolution: "@types/react@npm:18.2.38"
+"@types/react@npm:^18.2.39":
+  version: 18.2.39
+  resolution: "@types/react@npm:18.2.39"
   dependencies:
     "@types/prop-types": "npm:*"
     "@types/scheduler": "npm:*"
     csstype: "npm:^3.0.2"
-  checksum: 56edd4756081b677e38ee23ad6d340658c5e2468785cb20968318cec357e1ea7ccf3ecd9534981741192dd1b894200acfaf0f1551b4795c6077668f6afc19345
+  checksum: e91a5419d7615ab4fcaa7cb3ad2bd372093676e86c082748ab36ac394d3ed560070482d092a5488f74d6b1d913369e4dabf6eb287debed4d70cd3eb7dc135542
   languageName: node
   linkType: hard
 
@@ -2253,12 +2253,12 @@ __metadata:
   languageName: node
   linkType: hard
 
-"lucide-react@npm:^0.293.0":
-  version: 0.293.0
-  resolution: "lucide-react@npm:0.293.0"
+"lucide-react@npm:^0.294.0":
+  version: 0.294.0
+  resolution: "lucide-react@npm:0.294.0"
   peerDependencies:
     react: ^16.5.1 || ^17.0.0 || ^18.0.0
-  checksum: 034d257b0833ebca674135b38f9ecf8b7d344ac2c15607e2eb5aeb0bd221945c5971ae35cfe9d6d26c479ff6b986f7b8bfee03ca3084ccd866086c2e54de641c
+  checksum: 3c8d05743c5bac0299ac23ebcb78b6c0ae03182878cd80f4a51ccb89507ea564145cc8bc77757874066044e7a96af14a2a986cd759ae2b971dcab953c6b0c566
   languageName: node
   linkType: hard
 
@@ -3274,7 +3274,7 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "tickup@workspace:."
   dependencies:
-    "@biomejs/biome": "npm:1.3.3"
+    "@biomejs/biome": "npm:1.4.0"
     "@clerk/nextjs": "npm:4.27.2"
     "@radix-ui/react-accordion": "npm:^1.1.2"
     "@radix-ui/react-dialog": "npm:^1.0.5"
@@ -3283,12 +3283,12 @@ __metadata:
     "@radix-ui/react-slot": "npm:^1.0.2"
     "@radix-ui/react-tabs": "npm:^1.0.4"
     "@types/node": "npm:^20.10.0"
-    "@types/react": "npm:^18.2.38"
+    "@types/react": "npm:^18.2.39"
     "@types/react-dom": "npm:^18.2.17"
     autoprefixer: "npm:^10.4.16"
     class-variance-authority: "npm:^0.7.0"
     clsx: "npm:^2.0.0"
-    lucide-react: "npm:^0.293.0"
+    lucide-react: "npm:^0.294.0"
     next: "npm:14.0.3"
     postcss: "npm:^8.4.31"
     react: "npm:^18.2.0"
