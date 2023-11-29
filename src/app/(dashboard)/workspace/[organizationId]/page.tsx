@@ -1,5 +1,4 @@
 import { OrganizationProfile, auth } from "@clerk/nextjs";
-import React from "react";
 
 const WorkspacePage: React.FC = (props) => {
   const { user, userId, organization } = auth();
@@ -9,7 +8,6 @@ const WorkspacePage: React.FC = (props) => {
       {/* <p>{user}</p> */}
       <p>{userId}</p>
       {organization && <p>{JSON.stringify(organization)}</p>}
-      <OrganizationProfile />
     </div>
   );
 };

@@ -4,7 +4,7 @@ import DashboardSidebar from "./components/DashboardSidebar";
 
 const DashboardLayout: React.FC<PropsWithChildren> = ({ children }) => {
   return (
-    <div>
+    <div className="bg-[#2a2f34]">
       <DashboardHeader />
       <div className="flex mt-16">
         <DashboardSidebar />
