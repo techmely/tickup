@@ -112,6 +112,7 @@ declare global {
   const useMemo: typeof import('react')['useMemo']
   const useParams: typeof import('next/navigation')['useParams']
   const usePathname: typeof import('next/navigation')['usePathname']
+  const usePreferencesState: typeof import('./src/shared/hooks/usePreferences')['usePreferencesState']
   const useReducer: typeof import('react')['useReducer']
   const useRef: typeof import('react')['useRef']
   const useRouter: typeof import('next/navigation')['useRouter']

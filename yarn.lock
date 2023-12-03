@@ -1518,6 +1518,18 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@techmely/utils@npm:1.9.5":
+  version: 1.9.5
+  resolution: "@techmely/utils@npm:1.9.5"
+  peerDependencies:
+    dayjs: ^1.11.6
+  peerDependenciesMeta:
+    dayjs:
+      optional: true
+  checksum: 9484d45ca8a717945035a38b276d385157b8796d624c1fd4dad9d0e9c9cf75dc114478d1116475d2256c8a5dcc16bae3fcc18ebb11d5ff3e4f48219cdfe9233a
+  languageName: node
+  linkType: hard
+
 "@types/body-parser@npm:*":
   version: 1.19.5
   resolution: "@types/body-parser@npm:1.19.5"
@@ -4116,6 +4128,7 @@ __metadata:
     "@radix-ui/react-slot": "npm:^1.0.2"
     "@radix-ui/react-tabs": "npm:^1.0.4"
     "@radix-ui/react-tooltip": "npm:^1.0.7"
+    "@techmely/utils": "npm:1.9.5"
     "@types/node": "npm:^20.10.0"
     "@types/react": "npm:^18.2.39"
     "@types/react-dom": "npm:^18.2.17"
@@ -4137,6 +4150,7 @@ __metadata:
     tailwindcss-animate: "npm:^1.0.7"
     typescript: "npm:^5.3.2"
     unplugin-auto-import: "npm:0.17.1"
+    zustand: "npm:4.4.7"
   languageName: unknown
   linkType: soft
 
@@ -4368,7 +4382,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"use-sync-external-store@npm:^1.2.0":
+"use-sync-external-store@npm:1.2.0, use-sync-external-store@npm:^1.2.0":
   version: 1.2.0
   resolution: "use-sync-external-store@npm:1.2.0"
   peerDependencies:
@@ -4483,5 +4497,25 @@ __metadata:
   version: 2.3.4
   resolution: "yaml@npm:2.3.4"
   checksum: cf03b68f8fef5e8516b0f0b54edaf2459f1648317fc6210391cf606d247e678b449382f4bd01f77392538429e306c7cba8ff46ff6b37cac4de9a76aff33bd9e1
+  languageName: node
+  linkType: hard
+
+"zustand@npm:4.4.7":
+  version: 4.4.7
+  resolution: "zustand@npm:4.4.7"
+  dependencies:
+    use-sync-external-store: "npm:1.2.0"
+  peerDependencies:
+    "@types/react": ">=16.8"
+    immer: ">=9.0"
+    react: ">=16.8"
+  peerDependenciesMeta:
+    "@types/react":
+      optional: true
+    immer:
+      optional: true
+    react:
+      optional: true
+  checksum: de507f09eb79039d74d282df6ffac6c7fb6b840ca3620b0392bcbe3f9049902802db5448b4002e6fcb32f903f7ec1aea14602049eb2a3a8410bfea7186d72fb7
   languageName: node
   linkType: hard

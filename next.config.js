@@ -22,7 +22,7 @@ const nextConfig = {
             "react-use": ["useToggle"],
           },
         ],
-        dirs: ["./src/shared/components", "./src/shared/utils"],
+        dirs: ["./src/shared/**"],
       }),
     );
 

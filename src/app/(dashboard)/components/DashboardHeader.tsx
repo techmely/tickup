@@ -3,7 +3,7 @@ import SearchCommandPalette from "./SearchCommandPallete";
 
 const DashboardHeader: React.FC = (props) => {
   return (
-    <header id="header" className="fixed top-0 left-0 w-full py-6 shadow-sm bg-[#3c414a]">
+    <header id="header" className="w-full py-4 shadow-sm bg-[#3c414a]">
       <div className="w-full flex text-xs">
         <div className="w-10 h-10">
           <Link href="/dashboard">
