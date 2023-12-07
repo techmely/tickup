@@ -1,7 +1,7 @@
-import AsideNavigateMenus from "./DashboadAside/AsideNavigateMenus";
-import AsideSpaces from "./DashboadAside/AsideSpaces";
-import AsideSupports from "./DashboadAside/AsideSupports";
-import AsideWorkspaceSelection from "./DashboadAside/AsideWorkspaceSelection";
+import AsideNavigateMenus from "./DashboardAside/AsideNavigateMenus";
+import AsideSpaces from "./DashboardAside/AsideSpaces";
+import AsideSupports from "./DashboardAside/AsideSupports";
+import AsideWorkspaceSelection from "./DashboardAside/AsideWorkspaceSelection";
 
 const DashboardSidebar: React.FC = (props) => {
   const preferences = usePreferencesState();
