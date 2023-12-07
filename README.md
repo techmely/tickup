@@ -4,16 +4,16 @@
 
 Repo này là kết quả của [Series Build Product Fast](https://www.youtube.com/watch?v=XQzO26ak38Y&list=PLwJIrGynFq9B9_yPQjLdFj6Ziv9jRmCd5), nếu bạn không có thời gian để xem videos, hãy Star repo và clone về để dùng cho riêng bạn
 
-## Tính năng chính
+## Tính năng sẽ làm
 
-- Auth
-- Organization/Workspaces
-- Quản lý mục tiêu tổng, danh sách công việc
-- Nhóm có thể chat realtime trên Ticket/Issue đang hoạt động
-- Sử dụng AI để tạo tự động danh sách công việc hoặc tóm tắt cuộc hội thoại
-- Thanh toán tiền + nâng cấp subscriptions
-- Xây dựng các landing pages
-- Tracking user events với UTM
+- [x] Auth
+- [x] Organization/Workspaces
+- [x] Xây dựng các landing pages
+- [] Quản lý mục tiêu tổng, danh sách công việc
+- [] Nhóm có thể chat realtime trên Ticket/Issue đang hoạt động
+- [] Sử dụng AI để tạo tự động danh sách công việc hoặc tóm tắt cuộc hội thoại
+- [] Thanh toán tiền + nâng cấp subscriptions
+- [] Tracking user events với UTM
 ........ Sẽ cập nhật thêm
 
 ## Công nghệ triển khai
