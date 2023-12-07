@@ -1,0 +1,16 @@
+{
+  "editor.defaultFormatter": "biomejs.biome",
+  "[javascript]": {
+    "editor.defaultFormatter": "biomejs.biome"
+  },
+  "[typescript]": {
+    "editor.defaultFormatter": "biomejs.biome"
+  },
+  "[typescriptreact]": {
+    "editor.defaultFormatter": "biomejs.biome"
+  },
+  "editor.formatOnSave": true,
+  "editor.fontLigatures": true,
+  "editor.formatOnPaste": false,
+  "cSpell.words": ["biomejs", "cmdk", "lucide", "nextjs", "tickup", "unplugin", "zustand"]
+}

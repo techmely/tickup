@@ -5,12 +5,15 @@
     "clientKind": "git"
   },
   "files": {
-    "ignore": [".next", ".yarn", "node_modules", "public"]
+    "ignore": [".next", ".yarn", "node_modules", "public", "./auto-imports.d.ts"]
   },
   "linter": {
     "enabled": true,
     "rules": {
-      "recommended": true
+      "recommended": true,
+      "a11y": {
+        "noSvgWithoutTitle": "off"
+      }
     }
   },
   "formatter": {

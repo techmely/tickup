@@ -1,4 +1,5 @@
 import { ClerkProvider } from "@clerk/nextjs";
+import clsx from "clsx";
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import "./globals.css";
@@ -17,8 +18,8 @@ export default function RootLayout({
 }) {
   return (
     <ClerkProvider>
-      <html lang="en">
-        <body className={inter.className}>{children}</body>
+      <html lang="en" className="dark">
+        <body className={clsx(inter.className, "h-screen")}>{children}</body>
       </html>
     </ClerkProvider>
   );
