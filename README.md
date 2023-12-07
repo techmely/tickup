@@ -9,11 +9,12 @@ Repo này là kết quả của [Series Build Product Fast](https://www.youtube.
 - [x] Auth
 - [x] Organization/Workspaces
 - [x] Xây dựng các landing pages
-- [] Quản lý mục tiêu tổng, danh sách công việc
-- [] Nhóm có thể chat realtime trên Ticket/Issue đang hoạt động
-- [] Sử dụng AI để tạo tự động danh sách công việc hoặc tóm tắt cuộc hội thoại
-- [] Thanh toán tiền + nâng cấp subscriptions
-- [] Tracking user events với UTM
+- [ ] Quản lý mục tiêu tổng, danh sách công việc
+- [ ] Nhóm có thể chat realtime trên Ticket/Issue đang hoạt động
+- [ ] Sử dụng AI để tạo tự động danh sách công việc hoặc tóm tắt cuộc hội thoại
+- [ ] Thanh toán tiền + nâng cấp subscriptions
+- [ ] Tracking user events với UTM
+
 ........ Sẽ cập nhật thêm
 
 ## Công nghệ triển khai
