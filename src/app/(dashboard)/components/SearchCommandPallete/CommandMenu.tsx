@@ -4,7 +4,6 @@ export function CommandMenu() {
   const [isOpen, setIsOpen] = useState(false);
 
   useEffect(() => {
-    console.log("????");
     const handleKeyDown = (e: KeyboardEvent) => {
       if (e.key === "k" && (e.metaKey || e.ctrlKey)) {
         e.preventDefault();

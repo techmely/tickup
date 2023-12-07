@@ -1,7 +1,7 @@
 import { CommandIcon, SearchIcon } from "lucide-react";
 import { CommandMenu } from "./CommandMenu";
 
-const SearchCommandPalette: React.FC = (props) => {
+const SearchCommandPalette: React.FC = () => {
   return (
     <div className="relative bg-gray-500 rounded-md group">
       <div className="absolute top-2 left-2 z-[1]">
