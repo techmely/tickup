@@ -3,7 +3,7 @@ import { CommandMenu } from "./CommandMenu";
 
 const SearchCommandPalette: React.FC = () => {
   return (
-    <div className="relative bg-gray-500 rounded-md group">
+    <div className="relative inline-block bg-gray-500 rounded-md group">
       <div className="absolute top-2 left-2 z-[1]">
         <SearchIcon size="24" className="text-gray-500 group-hover:text-white" />
       </div>

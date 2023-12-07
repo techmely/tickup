@@ -99,7 +99,6 @@ declare global {
   const permanentRedirect: typeof import('next/navigation')['permanentRedirect']
   const redirect: typeof import('next/navigation')['redirect']
   const startTransition: typeof import('react')['startTransition']
-  const use-toggle: typeof import('react-use')['use-toggle']
   const useCallback: typeof import('react')['useCallback']
   const useContext: typeof import('react')['useContext']
   const useDebugValue: typeof import('react')['useDebugValue']

@@ -2,12 +2,19 @@ import { PlusSquareIcon } from "lucide-react";
 
 const ButtonActionNew: React.FC = (props) => {
   return (
-    <div className="relative">
-      <div className="absolute top-2 left-2 z-[1]">
-        <PlusSquareIcon size="24" className="text-gray-500 group-hover:text-white" />
-      </div>
-      <Button className="relative">New</Button>
-    </div>
+    <TooltipProvider>
+      <Tooltip>
+        <TooltipTrigger asChild>
+          <Button className="relative">
+            <PlusSquareIcon size="20" className="text-gray-500 group-hover:text-white mr-2" />
+            New
+          </Button>
+        </TooltipTrigger>
+        <TooltipContent>
+          <p>Create Item</p>
+        </TooltipContent>
+      </Tooltip>
+    </TooltipProvider>
   );
 };
 
