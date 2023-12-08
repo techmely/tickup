@@ -1,5 +1,5 @@
-import { useAuth, useOrganization } from "@clerk/nextjs";
-import { SidebarIcon } from "lucide-react";
+import { useOrganization } from "@clerk/nextjs";
+import { ChevronDownIcon, SidebarIcon } from "lucide-react";
 import React from "react";
 
 const AsideWorkspaceSelection: React.FC = (props) => {
@@ -11,15 +11,16 @@ const AsideWorkspaceSelection: React.FC = (props) => {
   };
 
   return (
-    <div className="flex items-center justify-between">
+    <div className="flex items-center justify-between p-4 shadow">
       <DropdownMenu>
         <DropdownMenuTrigger asChild>
-          <Button variant="outline">
+          <Button variant="ghost">
             <div className="flex gap-1 items-center">
               {organization?.imageUrl && (
                 <img width={20} height={20} src={organization?.imageUrl} alt={organization.name} />
               )}
-              <p>{organization?.name}</p>
+              <p className="text-xl">{organization?.name}</p>
+              <ChevronDownIcon size={20} />
             </div>
           </Button>
         </DropdownMenuTrigger>
@@ -45,25 +46,6 @@ const AsideWorkspaceSelection: React.FC = (props) => {
             </DropdownMenuItem>
           </DropdownMenuGroup>
           <DropdownMenuSeparator />
-          <DropdownMenuGroup>
-            <DropdownMenuItem>Team</DropdownMenuItem>
-            <DropdownMenuSub>
-              <DropdownMenuSubTrigger>Invite users</DropdownMenuSubTrigger>
-              <DropdownMenuPortal>
-                <DropdownMenuSubContent>
-                  <DropdownMenuItem>Email</DropdownMenuItem>
-                  <DropdownMenuItem>Message</DropdownMenuItem>
-                  <DropdownMenuSeparator />
-                  <DropdownMenuItem>More...</DropdownMenuItem>
-                </DropdownMenuSubContent>
-              </DropdownMenuPortal>
-            </DropdownMenuSub>
-            <DropdownMenuItem>
-              New Team
-              <DropdownMenuShortcut>⌘+T</DropdownMenuShortcut>
-            </DropdownMenuItem>
-          </DropdownMenuGroup>
-          <DropdownMenuSeparator />
           <DropdownMenuItem>GitHub</DropdownMenuItem>
           <DropdownMenuItem>Support</DropdownMenuItem>
           <DropdownMenuItem disabled>API</DropdownMenuItem>
@@ -77,12 +59,12 @@ const AsideWorkspaceSelection: React.FC = (props) => {
       <TooltipProvider>
         <Tooltip>
           <TooltipTrigger asChild>
-            <Button variant="outline" size="sm" onClick={handleCloseSidebar}>
+            <Button variant="ghost" size="sm" className="" onClick={handleCloseSidebar}>
               <SidebarIcon size="20" />
             </Button>
           </TooltipTrigger>
           <TooltipContent>
-            <p>Toggle sidebar</p>
+            <p>Collapse sidebar</p>
           </TooltipContent>
         </Tooltip>
       </TooltipProvider>

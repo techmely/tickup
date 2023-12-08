@@ -1,10 +1,12 @@
+import ButtonAI from "./ButtonAI";
 import ButtonActionNew from "./ButtonActionNew";
 import ButtonQuickActionMenu from "./ButtonQuickActionMenu";
+import ButtonUserMenu from "./ButtonUserMenu";
 import SearchCommandPalette from "./SearchCommandPalette";
 
 const DashboardHeader: React.FC = () => {
   return (
-    <header id="header" className="w-full py-4 shadow-sm bg-[#3c414a]">
+    <header id="header" className="w-full py-2 px-4 shadow-sm bg-[#3c414a]">
       <div className="w-full flex text-xs">
         <div className="w-10 h-10">
           <Link href="/dashboard">
@@ -55,8 +57,9 @@ const DashboardHeader: React.FC = () => {
             </svg>
           </Link>
         </div>
-        <div className="grow">
+        <div className="grow text-end md:flex md:items-center md:justify-end space-x-2 mr-8">
           <SearchCommandPalette />
+          <ButtonAI />
         </div>
         <div className="inline-flex items-center gap-3">
           <Button
@@ -82,11 +85,10 @@ const DashboardHeader: React.FC = () => {
           </Button>
           <ButtonActionNew />
           <ButtonQuickActionMenu />
-          <div>User Menu</div>
+          <ButtonUserMenu />
         </div>
       </div>
     </header>
   );
 };
-
 export default DashboardHeader;

@@ -68,6 +68,8 @@ declare global {
   const MenubarSubContent: typeof import('./src/shared/components/menubar')['MenubarSubContent']
   const MenubarSubTrigger: typeof import('./src/shared/components/menubar')['MenubarSubTrigger']
   const MenubarTrigger: typeof import('./src/shared/components/menubar')['MenubarTrigger']
+  const NImage: typeof import('next/image')['default']
+  const NScript: typeof import('next/script')['default']
   const Popover: typeof import('./src/shared/components/popover')['Popover']
   const PopoverContent: typeof import('./src/shared/components/popover')['PopoverContent']
   const PopoverTrigger: typeof import('./src/shared/components/popover')['PopoverTrigger']

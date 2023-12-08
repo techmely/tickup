@@ -1,20 +1,33 @@
 import { PlusSquareIcon } from "lucide-react";
 
 const ButtonActionNew: React.FC = (props) => {
+  // const [isOpen, setIsOpen] = useState(false);
   return (
-    <TooltipProvider>
-      <Tooltip>
-        <TooltipTrigger asChild>
-          <Button className="relative">
-            <PlusSquareIcon size="20" className="text-gray-500 group-hover:text-white mr-2" />
-            New
-          </Button>
-        </TooltipTrigger>
-        <TooltipContent>
-          <p>Create Item</p>
-        </TooltipContent>
-      </Tooltip>
-    </TooltipProvider>
+    <Dialog>
+      <TooltipProvider delayDuration={200}>
+        <Tooltip>
+          <TooltipTrigger asChild>
+            <Button variant="ghost" className="relative text-lg">
+              <PlusSquareIcon size="24" className="text-white mr-2" />
+              New
+            </Button>
+          </TooltipTrigger>
+          <TooltipContent>
+            <p>Create Item</p>
+          </TooltipContent>
+        </Tooltip>
+      </TooltipProvider>
+      <DialogContent className="sm:max-w-[425px]">
+        <DialogHeader>
+          <DialogTitle className="sr-only">Tickup AI Helper</DialogTitle>
+          <Input placeholder="Bạn muốn AI viết gì cho bạn nào?" />
+        </DialogHeader>
+        <div className="grid gap-4 py-4">Hello AI</div>
+        <DialogFooter>
+          <Button type="submit">Save changes</Button>
+        </DialogFooter>
+      </DialogContent>
+    </Dialog>
   );
 };
 
