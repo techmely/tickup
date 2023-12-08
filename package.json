@@ -29,6 +29,7 @@
     "cmdk": "^0.2.0",
     "date-fns": "^2.30.0",
     "lucide-react": "^0.294.0",
+    "million": "2.6.4",
     "next": "14.0.3",
     "react": "18.3.0-canary-aba93acb6-20231205",
     "react-day-picker": "^8.9.1",
@@ -40,6 +41,7 @@
   },
   "devDependencies": {
     "@biomejs/biome": "1.4.1",
+    "@next/bundle-analyzer": "14.0.4",
     "@types/node": "^20.10.3",
     "@types/react": "^18.2.42",
     "@types/react-dom": "^18.2.17",
