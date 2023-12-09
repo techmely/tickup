@@ -28,6 +28,9 @@ Repo này là kết quả của [Series Build Product Fast](https://www.youtube.
 - Deploy: [Vercel Edge](https://vercel.com/docs/edge-network/overview)
 - Animation: [Gsap](https://gsap.com) hoặc [AnimateJs](https://animejs.com)
 - Testing: Sử dụng Unit Test với [Vitest](https://vitest.dev) + e2e testing với [Playwright](https://playwright.dev)
+- Performance: MillionJs để làm React nhanh hơn ~80%
+- Auto Import: React + Next Component + Folder shared sẽ auto import. Giảm thiểu phần code import
+- Format/Linting: Dùng Biomejs với tốc độ xử lý gần như là nhanh nhất ở thời điểm hiện tại!
 
 ## Trải nghiệm phát triển
 - Sử dụng Gitflow + Semantic commit + Rabbit AI để tự review/update phần code
