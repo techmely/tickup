@@ -2,7 +2,7 @@ import React, { PropsWithChildren } from "react";
 import DashboardHeader from "./components/DashboardHeader";
 import DashboardMain from "./components/DashboardMain";
 
-const DashboardLayout: React.FC<PropsWithChildren> = ({ children }) => {
+const DashboardLayout: React.FC<PropsWithChildren> = async ({ children }) => {
   return (
     <>
       <DashboardHeader />

@@ -1,11 +1,17 @@
+import ButtonAI from "./ButtonAI";
 import ButtonActionNew from "./ButtonActionNew";
-import SearchCommandPalette from "./SearchCommandPallete";
+import ButtonQuickActionMenu from "./ButtonQuickActionMenu";
+import ButtonUserMenu from "./ButtonUserMenu";
+import SearchCommandPalette from "./SearchCommandPalette";
 
-const DashboardHeader: React.FC = (props) => {
+const DashboardHeader: React.FC = () => {
   return (
-    <header id="header" className="w-full py-4 shadow-sm bg-[#3c414a]">
-      <div className="w-full flex text-xs">
-        <div className="w-10 h-10">
+    <header
+      id="header"
+      className="flex items-center w-full h-actions-bar px-4 shadow-sm bg-[#3c414a]"
+    >
+      <div className="flex items-center w-full text-xs">
+        <div className="flex items-center w-10 h-10">
           <Link href="/dashboard">
             <svg
               width="32"
@@ -54,20 +60,38 @@ const DashboardHeader: React.FC = (props) => {
             </svg>
           </Link>
         </div>
-        <div>
+        <div className="grow text-end md:flex md:items-center md:justify-center space-x-2 mr-8">
           <SearchCommandPalette />
+          <ButtonAI />
         </div>
-        <div>
-          <Button asChild>
-            <Link href="/settings/billing">Upgrade</Link>
+        <div className="inline-flex items-center gap-3">
+          <Button
+            asChild
+            className="text-xl text-white"
+            style={{ background: "linear-gradient(-45deg,#ffc800,#ff02f0,#8930fd,#49ccf9)" }}
+          >
+            <Link href="/settings/billing">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="1em"
+                height="1em"
+                viewBox="0 0 512 512"
+                className="mr-2"
+              >
+                <path
+                  fill="currentColor"
+                  d="m256 29.816l-231 154v106.368l231-154l231 154V183.816zm0 128.043L105 259.783v90.283l151-101.925l151 101.925v-90.283zm0 112l-87 58.725v67.6l87-58l87 58v-67.6zm0 89.957l-87 58v64.368l87-58l87 58v-64.368z"
+                />
+              </svg>
+              Upgrade
+            </Link>
           </Button>
+          <ButtonActionNew />
+          <ButtonQuickActionMenu />
+          <ButtonUserMenu />
         </div>
-        <ButtonActionNew />
-        <div>Quick Actions Menu Button</div>
-        <div>User Menu</div>
       </div>
     </header>
   );
 };
-
 export default DashboardHeader;

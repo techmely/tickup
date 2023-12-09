@@ -5,15 +5,19 @@ const publicRoutes = ["/", "/login", "/signup"];
 
 export default authMiddleware({
   publicRoutes,
-  afterAuth({ userId, orgId, isPublicRoute }, req, evt) {
+  afterAuth({ userId, orgId, isPublicRoute }, req) {
+    // Chưa đăng nhập + không phải public route
     if (!userId && !isPublicRoute) {
       return redirectToSignIn({ returnBackUrl: req.url });
     }
-    if (userId && !orgId && publicRoutes.includes(req.nextUrl.pathname)) {
-      return NextResponse.redirect(new URL("/dashboard", req.url), 308);
-    }
-    if (userId && orgId && publicRoutes.includes(req.nextUrl.pathname)) {
-      return NextResponse.redirect(new URL(`/workspace/${orgId}`, req.url), 308);
+    // Đã đăng nhập rồi
+    if (userId) {
+      if (!orgId) {
+        return NextResponse.redirect(new URL("/create-workspace", req.url), 308);
+      }
+      if (orgId && isPublicRoute) {
+        return NextResponse.redirect(new URL(`/w/${orgId}/home`, req.url), 308);
+      }
     }
   },
 });

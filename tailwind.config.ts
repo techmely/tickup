@@ -11,6 +11,10 @@ module.exports = {
       },
     },
     extend: {
+      height: {
+        "actions-bar": "var(--global-actions-bar-height, 56px)",
+        "main-container-height": "calc(100% - var(--global-actions-bar-height, 56px))",
+      },
       colors: {
         border: "hsl(var(--border))",
         input: "hsl(var(--input))",
@@ -50,6 +54,9 @@ module.exports = {
         lg: "var(--radius)",
         md: "calc(var(--radius) - 2px)",
         sm: "calc(var(--radius) - 4px)",
+      },
+      zIndex: {
+        "top-bar": "10",
       },
       keyframes: {
         "accordion-down": {

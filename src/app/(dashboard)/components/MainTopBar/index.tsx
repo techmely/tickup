@@ -1,27 +1,30 @@
+"use client";
+
 import { useAuth } from "@clerk/nextjs";
 import { GoalIcon, HomeIcon, InboxIcon } from "lucide-react";
-import { For } from "million/react";
 import React from "react";
+import ButtonToggleSidebar from "./ButtonToggleSidebar";
 
-const AsideNavigateMenus: React.FC = () => {
+const MainTopBar: React.FC = () => {
+  const pathname = usePathname();
   const { orgId } = useAuth();
 
-  const menuItems = [
+  const pageItems = [
     {
       name: "Home",
-      href: `/w/${orgId}/home`,
+      path: `/w/${orgId}/home`,
       icon: <HomeIcon />,
     },
     {
       name: "Inbox",
-      href: `/w/${orgId}/inbox`,
+      path: `/w/${orgId}/inbox`,
       icon: <InboxIcon />,
     },
     {
       name: "Docs",
-      href: `/w/${orgId}/docs`,
+      path: `/w/${orgId}/docs`,
       icon: (
-        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+        <svg xmlns="http://www.w3.org/2000/svg" width="2em" height="2em" viewBox="0 0 24 24">
           <path
             fill="currentColor"
             d="M8.5 11.5v-1h7v1h-7Zm0-4v-1h7v1h-7Zm-2.5 7h7.5q.61 0 1.12.264q.509.265.876.744L18 18.758V4.615q0-.269-.173-.442T17.385 4H6.615q-.269 0-.442.173T6 4.615V14.5Zm.615 5.5h11.07l-2.975-3.883q-.227-.296-.536-.456q-.309-.161-.674-.161H6v3.885q0 .269.173.442t.442.173Zm10.77 1H6.615q-.69 0-1.152-.462Q5 20.075 5 19.385V4.615q0-.69.463-1.152Q5.925 3 6.615 3h10.77q.69 0 1.152.463q.463.462.463 1.152v14.77q0 .69-.462 1.152q-.463.463-1.153.463ZM6 20V4v16Zm0-4.5v-1v1Z"
@@ -31,7 +34,7 @@ const AsideNavigateMenus: React.FC = () => {
     },
     {
       name: "Dashboard",
-      href: `/w/${orgId}/dashboard`,
+      path: `/w/${orgId}/dashboard`,
       icon: (
         <svg xmlns="http://www.w3.org/2000/svg" width="1.5em" height="1.5em" viewBox="0 0 32 32">
           <path
@@ -47,31 +50,24 @@ const AsideNavigateMenus: React.FC = () => {
     },
     {
       name: "Goals",
-      href: `/w/${orgId}/goals`,
+      path: `/w/${orgId}/goals`,
       icon: <GoalIcon />,
     },
   ];
+  const currentTopBar = pageItems.find((i) => i.path === pathname);
+  if (!currentTopBar) return null;
 
   return (
-    <ul>
-      <For each={menuItems}>
-        {(item) => (
-          <li className="hover:bg-gray-600/50 rounded">
-            <Button
-              variant="link"
-              asChild
-              className="justify-start gap-2 w-full py-1.5 text-lg text-gray-200 font-normal hover:no-underline"
-            >
-              <Link href={item.href}>
-                {item.icon}
-                <span>{item.name}</span>
-              </Link>
-            </Button>
-          </li>
-        )}
-      </For>
-    </ul>
+    <div className="sticky top-0 z-top-bar flex items-center px-4 py-5 bg-gray-900/10 backdrop-blur-lg">
+      <div data-testid="block-top-bar-icon" className="flex items-center gap-2">
+        <ButtonToggleSidebar />
+        <div className="flex items-center gap-1 text-base text-gray-300">
+          {currentTopBar.icon}
+          <span>{currentTopBar.name}</span>
+        </div>
+      </div>
+    </div>
   );
 };
 
-export default AsideNavigateMenus;
+export default MainTopBar;
