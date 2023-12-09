@@ -6,9 +6,12 @@ import SearchCommandPalette from "./SearchCommandPalette";
 
 const DashboardHeader: React.FC = () => {
   return (
-    <header id="header" className="w-full py-2 px-4 shadow-sm bg-[#3c414a]">
-      <div className="w-full flex text-xs">
-        <div className="w-10 h-10">
+    <header
+      id="header"
+      className="flex items-center w-full h-actions-bar px-4 shadow-sm bg-[#3c414a]"
+    >
+      <div className="flex items-center w-full text-xs">
+        <div className="flex items-center w-10 h-10">
           <Link href="/dashboard">
             <svg
               width="32"
@@ -57,7 +60,7 @@ const DashboardHeader: React.FC = () => {
             </svg>
           </Link>
         </div>
-        <div className="grow text-end md:flex md:items-center md:justify-end space-x-2 mr-8">
+        <div className="grow text-end md:flex md:items-center md:justify-center space-x-2 mr-8">
           <SearchCommandPalette />
           <ButtonAI />
         </div>

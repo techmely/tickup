@@ -1,5 +1,3 @@
-"use client";
-
 import { GripIcon } from "lucide-react";
 import React from "react";
 

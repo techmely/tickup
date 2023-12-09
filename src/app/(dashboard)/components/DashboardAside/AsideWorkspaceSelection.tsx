@@ -1,8 +1,8 @@
 import { useOrganization } from "@clerk/nextjs";
-import { ChevronDownIcon, SidebarIcon } from "lucide-react";
+import { ChevronDownIcon, PlusIcon, SettingsIcon, SidebarIcon, Users2Icon } from "lucide-react";
 import React from "react";
 
-const AsideWorkspaceSelection: React.FC = (props) => {
+const AsideWorkspaceSelection: React.FC = () => {
   const { organization } = useOrganization();
   const preferences = usePreferencesState();
 
@@ -11,7 +11,7 @@ const AsideWorkspaceSelection: React.FC = (props) => {
   };
 
   return (
-    <div className="flex items-center justify-between p-4 shadow">
+    <div className="flex items-center justify-between p-4">
       <DropdownMenu>
         <DropdownMenuTrigger asChild>
           <Button variant="ghost">
@@ -24,35 +24,41 @@ const AsideWorkspaceSelection: React.FC = (props) => {
             </div>
           </Button>
         </DropdownMenuTrigger>
-        <DropdownMenuContent className="w-56">
-          <DropdownMenuLabel>My Account</DropdownMenuLabel>
+        <DropdownMenuContent className="w-72 p-4">
+          <DropdownMenuLabel className="flex items-center gap-4 pt-0 font-normal">
+            {organization?.imageUrl && (
+              <img
+                width={40}
+                height={40}
+                src={organization?.imageUrl}
+                alt={organization.name}
+                className="rounded-xl"
+              />
+            )}
+            <div>
+              <p className="text-xl">{organization?.name}</p>
+              <p className="text-sm">Free Forever * {organization?.membersCount} members</p>
+            </div>
+          </DropdownMenuLabel>
           <DropdownMenuSeparator />
-          <DropdownMenuGroup>
-            <DropdownMenuItem>
-              Profile
-              <DropdownMenuShortcut>⇧⌘P</DropdownMenuShortcut>
-            </DropdownMenuItem>
-            <DropdownMenuItem>
-              Billing
-              <DropdownMenuShortcut>⌘B</DropdownMenuShortcut>
-            </DropdownMenuItem>
-            <DropdownMenuItem>
+          <DropdownMenuGroup className="text-gray-300">
+            <DropdownMenuItem className="gap-2 text-lg hover:cursor-pointer">
+              <SettingsIcon size={20} />
               Settings
-              <DropdownMenuShortcut>⌘S</DropdownMenuShortcut>
             </DropdownMenuItem>
-            <DropdownMenuItem>
-              Keyboard shortcuts
-              <DropdownMenuShortcut>⌘K</DropdownMenuShortcut>
+            <DropdownMenuItem className="gap-2 text-lg hover:cursor-pointer">
+              Upgrade
+            </DropdownMenuItem>
+            <DropdownMenuItem className="gap-2 text-lg hover:cursor-pointer">Apps</DropdownMenuItem>
+            <DropdownMenuItem className="gap-2 text-lg hover:cursor-pointer">
+              <Users2Icon size={20} />
+              Manage users
             </DropdownMenuItem>
           </DropdownMenuGroup>
           <DropdownMenuSeparator />
-          <DropdownMenuItem>GitHub</DropdownMenuItem>
-          <DropdownMenuItem>Support</DropdownMenuItem>
-          <DropdownMenuItem disabled>API</DropdownMenuItem>
-          <DropdownMenuSeparator />
-          <DropdownMenuItem>
-            Log out
-            <DropdownMenuShortcut>⇧⌘Q</DropdownMenuShortcut>
+          <DropdownMenuItem className="gap-2 text-lg hover:cursor-pointer">
+            <PlusIcon />
+            New Workspace
           </DropdownMenuItem>
         </DropdownMenuContent>
       </DropdownMenu>

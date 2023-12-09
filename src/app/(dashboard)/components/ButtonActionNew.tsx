@@ -7,10 +7,15 @@ const ButtonActionNew: React.FC = (props) => {
       <TooltipProvider delayDuration={200}>
         <Tooltip>
           <TooltipTrigger asChild>
-            <Button variant="ghost" className="relative text-lg">
-              <PlusSquareIcon size="24" className="text-white mr-2" />
-              New
-            </Button>
+            {/* biome-ignore lint/a11y/noNoninteractiveTabindex: <explanation> */}
+            <span tabIndex={0}>
+              <DialogTrigger asChild>
+                <Button variant="ghost" className="relative text-lg">
+                  <PlusSquareIcon size="24" className="text-white mr-2" />
+                  New
+                </Button>
+              </DialogTrigger>
+            </span>
           </TooltipTrigger>
           <TooltipContent>
             <p>Create Item</p>
