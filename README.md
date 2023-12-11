@@ -1,4 +1,4 @@
-# Fullstack ClickUp Clone: Next.js 14, Clerk, Sentry, Radix UI, GSAP, PlanetScale, Stripe, Tailwind, MySQL, Playwright
+# Fullstack ClickUp Clone: Next.js 14, Clerk, Sentry, Radix UI Tailwind, GSap, PlanetScale, Stripe, Playwright
 
 ![image](https://github.com/techmely/tickup/blob/main/public/images/Thumbnail.png)
 
@@ -9,35 +9,76 @@ Repo này là kết quả của [Series Build Product Fast](https://www.youtube.
 - [x] Auth
 - [x] Organization/Workspaces
 - [x] Xây dựng các landing pages
+- [ ] AI tự động generate ra các template công việc/hoạt động nhóm...
 - [ ] Quản lý mục tiêu tổng, danh sách công việc
 - [ ] Nhóm có thể chat realtime trên Ticket/Issue đang hoạt động
 - [ ] Sử dụng AI để tạo tự động danh sách công việc hoặc tóm tắt cuộc hội thoại
 - [ ] Thanh toán tiền + nâng cấp subscriptions
 - [ ] Tracking user events với UTM
 
-........ Sẽ cập nhật thêm
+........ Sẽ cập nhật thêm khi có thời gian(hoặc mời bạn contribute)
 
 ## Công nghệ triển khai
-- [NextJs](https://nextjs.org) 14(App router + Server actions)
-- CSS: [TailwindCss](https://tailwindcss.com)
-- AI: [OpenAI](https://openai.com)
+
+### Architecture
+
+Clean Architect + DDD(Domain-driven Design)
+
+### Framework/Toolings
+
+#### Application
+
+- Web: [NextJs](https://nextjs.org) 14(App router + Server actions)
+- Desktop: [Tauri](https://tauri.app/)
+- Mobile: [Flutter](https://flutter.dev/)
+- Serverless Database: [PlanetScale](https://planetscale.com) - MySql, [Kysely](https://github.com/kysely-org/kysely) cho query builder
+
+#### User Interface and User Experiences
+
+- AI: [OpenAI](https://openai.com) + [LLMs LangChain](https://js.langchain.com/docs/get_started/introduction) để generate các templates, gợi ý danh sách công việc, tóm tắt văn bản...
+- UI: CSS dùng [TailwindCss](https://tailwindcss.com) và [Radix UI](https://www.radix-ui.com/primitives/docs/overview/introduction)
 - Validation: Dùng [Valibot](https://valibot.dev/) để validate forms hoặc các đầu vào input nói chung
 - Error Handler: [Sentry](https://sentry.io) capture lại các lỗi, và có ErrorBoundary tránh lỗi xảy ra ở Client
+- Animation: [GSap](https://gsap.com) hoặc [AnimateJs](https://animejs.com)
 - Payment/Subscriptions: [Stripe](https://stripe.com/)
-- Database: [PlanetScale](https://planetscale.com) - MySql, [Kysely](https://github.com/kysely-org/kysely) for query builder
+
+#### CI/CD
+
+- Testing: Unit Test với [Vitest](https://vitest.dev) + e2e với [Playwright](https://playwright.dev) và [Cucumber Gherkin](https://cucumber.io)
 - Deploy: [Vercel Edge](https://vercel.com/docs/edge-network/overview)
-- Animation: [Gsap](https://gsap.com) hoặc [AnimateJs](https://animejs.com)
-- Testing: Sử dụng Unit Test với [Vitest](https://vitest.dev) + e2e testing với [Playwright](https://playwright.dev)
-- Performance: MillionJs để làm React nhanh hơn ~80%
+- Runner: [Github Actions](https://github.com/features/actions)
+
+#### Performance
+
+- Tools Web App:
+  
+    - Dùng [MillionJs](https://million.dev) để làm React nhanh hơn ~80% so với nguyên bản
+    - Dùng [UnLighthouse](https://unlighthouse.dev) để auditing, đo performance metrics... ở các pages bạn muốn!
+    - Dùng [Speedscope](https://github.com/jlfwong/speedscope) để trace performances profiles projects khi cần tối ưu sâu
+
+...
+
+## User Experience Development
+- Format/Linting: [Biomejs](https://biomejs.dev) với tốc độ xử lý gần như là nhanh nhất ở thời điểm hiện tại!
 - Auto Import: React + Next Component + Folder shared sẽ auto import. Giảm thiểu phần code import
-- Format/Linting: Dùng Biomejs với tốc độ xử lý gần như là nhanh nhất ở thời điểm hiện tại!
-
-## Trải nghiệm phát triển
-- Sử dụng Gitflow + Semantic commit + Rabbit AI để tự review/update phần code
+- Áp dụng GitFlow + Semantic Commit
 - Spell checker VsCode Extension để cảnh báo là gõ chữ sai
-- 
+- [CodeRabbit AI](https://coderabbit.ai) để self `review code`
 
-## Hướng dẫn sử dụng
+## Hướng dẫn sử dụng project
+
+### Trước lúc chạm vào code
+
+1. Tạo tài khoản CodeRabbit AI
+2. Tạo tài khoản OpenAI
+3. Tạo tài khoản Github
+4. Tạo tài khoản Stripe
+5. Tạo tài khoản Clerk
+6. Tạo tài khoản Vercel
+7. Tạo tài khoản PlanetScale
+8. Tạo tài khoản Sentry
+
+### Chạm vào code
 
 1. Install deps với `yarn install`
 2. Đổi `.env.example` thành `.env` và thêm các secret keys vào
