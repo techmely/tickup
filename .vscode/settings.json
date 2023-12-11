@@ -12,5 +12,19 @@
   "editor.formatOnSave": true,
   "editor.fontLigatures": true,
   "editor.formatOnPaste": false,
-  "cSpell.words": ["biomejs", "cmdk", "lucide", "nextjs", "tickup", "unplugin", "zustand"]
+  "cSpell.words": [
+    "biomejs",
+    "cmdk",
+    "knip",
+    "kysely",
+    "lucide",
+    "nextjs",
+    "planetscale",
+    "speedscope",
+    "tasuku",
+    "tickup",
+    "tsarch",
+    "unplugin",
+    "zustand"
+  ]
 }
