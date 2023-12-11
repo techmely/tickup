@@ -60,9 +60,9 @@ Clean Architect + DDD(Domain-driven Design)
 
 ## User Experience Development
 - Format/Linting: [Biomejs](https://biomejs.dev) với tốc độ xử lý gần như là nhanh nhất ở thời điểm hiện tại!
-- Auto Import: React + Next Component + Folder shared sẽ auto import. Giảm thiểu phần code import
-- Áp dụng GitFlow + Semantic Commit
-- Spell checker VsCode Extension để cảnh báo là gõ chữ sai
+- [Auto Import](https://github.com/unplugin/unplugin-auto-import): React + Next Component + Folder shared sẽ auto import. Giảm thiểu phần code import
+- Áp dụng [GitFlow](https://www.atlassian.com/git/tutorials/comparing-workflows/gitflow-workflow) + [Semantic Commit](https://www.conventionalcommits.org/en/v1.0.0)
+- [Spell Checker VsCode](https://marketplace.visualstudio.com/items?itemName=streetsidesoftware.code-spell-checker) Extension để cảnh báo là gõ chữ sai
 - [CodeRabbit AI](https://coderabbit.ai) để self `review code`
 
 ## Hướng dẫn sử dụng project
