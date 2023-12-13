@@ -1,4 +1,4 @@
-# Fullstack ClickUp Clone: Next.js 14, Clerk, Sentry, Radix UI Tailwind, GSap, PlanetScale, Stripe, Playwright
+# TickUp: Clean Architecture, Domain-Driven Design, Behavior-driven Development, Next.js 14, Open AI, Sentry, Shadcn, GSap, PlanetScale, Stripe, Playwright
 
 ![image](https://raw.githubusercontent.com/techmely/tickup/main/public/images/Thumbnail.png)
 
@@ -85,6 +85,13 @@ Team gợi ý bạn nên mua sách về đọc để hiểu sâu sắc và để
 
 ### Trước lúc chạm vào code
 
+
+I. Đọc thật kỹ phần Architecture Design ở bên trên, tránh lú và khó hiểu.
+
+Nếu đọc xong mà vẫn không hiểu, thì tạo issues hoặc discussion để hỏi nhé các bạn!
+
+II. Tạo tài khoản để dùng và chạy được project
+
 1. Tạo tài khoản CodeRabbit AI
 2. Tạo tài khoản OpenAI
 3. Tạo tài khoản Github
@@ -112,5 +119,11 @@ yarn dev
 
 
 ## License
+
+Tinh thần cho đi là chính nên là FREE to uses, đừng dùng nó để đi lừa đảo, hại người là mình thoải mái!. Nếu bạn muốn ủng hộ team - Hãy donate thông qua tài khoản bank này nhé.
+
+<p align="middle">
+  <img width="50%" src="https://raw.githubusercontent.com/techmely/tickup/main/public/images/QRCode.jpg" alt="Qrcode" />
+</p>
 
 MIT
