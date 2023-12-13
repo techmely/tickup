@@ -6,8 +6,9 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "bunx @biomejs/biome check .",
-    "prepare": "husky install"
+    "lint": "biome check .",
+    "lint.perf": "oxlint -D perf",
+    "prepare": "husky install && chmod +x ./node_modules/.bin/biome"
   },
   "dependencies": {
     "@clerk/nextjs": "4.27.5",
@@ -34,6 +35,7 @@
     "lucide-react": "^0.294.0",
     "million": "2.6.4",
     "next": "14.0.4",
+    "oxlint": "^0.0.20",
     "react": "18.3.0-next-fecc288b7-20221025",
     "react-day-picker": "^8.9.1",
     "react-dom": "18.3.0-next-fecc288b7-20221025",
