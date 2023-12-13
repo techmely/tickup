@@ -35,7 +35,6 @@
     "lucide-react": "^0.294.0",
     "million": "2.6.4",
     "next": "14.0.4",
-    "oxlint": "^0.0.20",
     "react": "18.3.0-next-fecc288b7-20221025",
     "react-day-picker": "^8.9.1",
     "react-dom": "18.3.0-next-fecc288b7-20221025",
@@ -65,6 +64,7 @@
     "tsarch": "5.3.0",
     "typescript": "^5.3.3",
     "unplugin-auto-import": "0.17.2",
+    "oxlint": "0.0.20",
     "vitest": "1.0.4"
   },
   "keywords": [
