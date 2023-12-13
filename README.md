@@ -1,6 +1,6 @@
 # Fullstack ClickUp Clone: Next.js 14, Clerk, Sentry, Radix UI Tailwind, GSap, PlanetScale, Stripe, Playwright
 
-![image](https://github.com/techmely/tickup/blob/main/public/images/Thumbnail.png)
+![image](https://raw.githubusercontent.com/techmely/tickup/main/public/images/Thumbnail.png)
 
 Repo này là kết quả của [Series Build Product Fast](https://www.youtube.com/watch?v=XQzO26ak38Y&list=PLwJIrGynFq9B9_yPQjLdFj6Ziv9jRmCd5), nếu bạn không có thời gian để xem videos, hãy Star repo và clone về để dùng cho riêng bạn
 
@@ -24,7 +24,7 @@ Repo này là kết quả của [Series Build Product Fast](https://www.youtube.
 
 **Clean Architect** + **DDD(Domain-driven Design)**
 
-![image](https://github.com/techmely/tickup/blob/main/public/images/CleanArchitecture.png)
+![image](https://raw.githubusercontent.com/techmely/tickup/main/public/images/CleanArchitecture.png)
 
 Để mà nói học về Clean Architecture, chắc học không hết mất. Nhưng ở project này, ta sẽ bóc tách tất cả module phức tạp theo hướng "Separate of concerns" - chia để trị. Và nó sẽ càng thú vị hơn ta kết hợp với DDD Pattern!
 
@@ -33,10 +33,10 @@ Ta cũng cần phải hiểu rõ Subdomains là gì.
 
 Team gợi ý bạn nên mua sách về đọc để hiểu sâu sắc và để nâng tầm mình lên cao hơn.
 
-<div style="display:flex; align-items:center;">
-  <div style="flex:1;"><img width="100%" height="100%" src="https://product.hstatic.net/200000211451/product/913a4121-dcd3-4635-90d6-123b981dc61e_60960d60a3494efda0a15aff5ee89a90.jpg" alt="Book" /></div>
-  <div style="flex:1;"><img width="100%" height="100%" src="https://m.media-amazon.com/images/I/61CyKEZTdEL._SL1360_.jpg" alt="Book" /></div>
-  <div style="flex:1;"><img width="100%" height="100%" src="https://m.media-amazon.com/images/I/81dmHMoJDjL._SY522_.jpg" alt="Book" /></div>
+<p align="middle">
+  <img width="30%" src="https://product.hstatic.net/200000211451/product/913a4121-dcd3-4635-90d6-123b981dc61e_60960d60a3494efda0a15aff5ee89a90.jpg" alt="Book" />
+  <img width="30%" src="https://m.media-amazon.com/images/I/61CyKEZTdEL._SL1360_.jpg" alt="Book" />
+  <img width="30%" src="https://m.media-amazon.com/images/I/81dmHMoJDjL._SY522_.jpg" alt="Book" />
 </div>
 
 
