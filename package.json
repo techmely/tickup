@@ -11,6 +11,8 @@
     "prepare": "husky install && chmod +x ./node_modules/.bin/biome"
   },
   "dependencies": {
+    "@builder.io/partytown": "0.8.1",
+    "@builder.io/react-hydration-overlay": "0.0.3",
     "@clerk/nextjs": "4.27.5",
     "@planetscale/database": "1.11.0",
     "@radix-ui/react-accordion": "^1.1.2",
