@@ -33,6 +33,8 @@
     "tickup",
     "tsarch",
     "unplugin",
+    "valibot",
+    "wasmer",
     "zustand"
   ]
 }
