@@ -2,7 +2,7 @@ import type { EntityId } from "@techmely/types";
 import { generatePrefixId } from "server/core/helpers/ids";
 
 export class UniqueEntityID {
-  id: string | number;
+  protected readonly id: EntityId;
 
   constructor(_id?: EntityId) {
     this.id = _id || generatePrefixId("entity");

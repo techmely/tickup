@@ -18,6 +18,14 @@ export abstract class ExceptionBase extends Error {
   abstract code: string;
   readonly correlationId: string;
 
+  /**
+   * @param {string} message
+   * @param {ObjectLiteral} [metadata={}]
+   * **BE CAREFUL** not to include sensitive info in 'metadata'
+   * to prevent leaks since all exception's data will end up
+   * in application's log files. Only include non-sensitive
+   * info that may help with debugging.
+   */
   constructor(readonly message: string, cause?: Error, readonly metadata?: unknown) {
     super(message);
     Error.captureStackTrace(this, this.constructor);
@@ -25,5 +33,16 @@ export abstract class ExceptionBase extends Error {
       requestId: "1",
     };
     this.correlationId = ctx.requestId;
+  }
+
+  toJSON(): NormalizedException {
+    return {
+      message: this.message,
+      code: this.code,
+      stack: this.stack,
+      correlationId: this.correlationId,
+      cause: JSON.stringify(this.cause),
+      metadata: this.metadata,
+    };
   }
 }

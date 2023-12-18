@@ -1,4 +1,4 @@
-import { OrderBy, PaginatedQueryParams } from "./repository.port";
+import { OrderBy, PaginatedQueryParams } from "../../application/port/repository.port";
 
 /**
  * Base class for regular queries
