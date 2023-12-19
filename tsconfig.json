@@ -11,11 +11,13 @@
     "moduleResolution": "bundler",
     "resolveJsonModule": true,
     "isolatedModules": true,
+    "verbatimModuleSyntax": true,
     "noImplicitAny": true,
     "jsx": "preserve",
     "incremental": true,
     "emitDecoratorMetadata": true,
     "experimentalDecorators": true,
+    "types": ["reflect-metadata"],
     "plugins": [
       {
         "name": "next"
