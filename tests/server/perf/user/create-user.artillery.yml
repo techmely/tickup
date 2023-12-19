@@ -1,0 +1,32 @@
+config:
+  target: http://localhost:3000/v1
+  phases:
+    - duration: 2
+      arrivalRate: 150
+  plugins:
+    faker:
+      locale: vi
+  variables:
+    email: '$faker.internet.email'
+    unverifiedEmail: ''
+    isEmailVerified: ''
+    nickname: '$faker'
+    mobile: ''
+    birthday: '$faker.date.birthdate'
+    name: ''
+    avatarUrl: ''
+    role: '$faker.helpers.arrayElement(["SUPER_ADMIN", "MODERATOR", "ADMIN", "MEMBER", "GUEST"])'
+    status: '$faker.helpers.arrayElement(["VERIFIED", "BLACKLIST", "INACTIVE", "ACTIVE", "CLOSED"])'
+    locale: ''
+    gender: ''
+    openPlatform: ''
+    utmCampaign: ''
+    utmMedium: ''
+    utmSource: ''
+    googleId: ''
+scenarios:
+  - flow:
+      - post:
+          url: '/users'
+          json:
+            .... UPDATING
