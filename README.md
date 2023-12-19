@@ -60,7 +60,9 @@ Team gợi ý bạn nên mua sách về đọc để hiểu sâu sắc và để
 
 #### CI/CD
 
-- Testing: Unit Test với [Vitest](https://vitest.dev) + e2e với [Playwright](https://playwright.dev) và [Cucumber Gherkin](https://cucumber.io)
+- Testing: 
+    - Unit Test với [Vitest](https://vitest.dev)
+    - e2e với [Playwright](https://playwright.dev) và [Cucumber Gherkin](https://cucumber.io)
 - Deploy: [Vercel Edge](https://vercel.com/docs/edge-network/overview)
 - Runner: [Github Actions](https://github.com/features/actions)
 
@@ -68,9 +70,14 @@ Team gợi ý bạn nên mua sách về đọc để hiểu sâu sắc và để
 
 - Tools Web App:
   
-    - Dùng [MillionJs](https://million.dev) để làm React nhanh hơn ~80% so với nguyên bản
-    - Dùng [UnLighthouse](https://unlighthouse.dev) để auditing, đo performance metrics... ở các pages bạn muốn!
-    - Dùng [Speedscope](https://github.com/jlfwong/speedscope) để trace performances profiles projects khi cần tối ưu sâu
+    - [MillionJs](https://million.dev) để làm React nhanh hơn ~80% so với nguyên bản
+    - [UnLighthouse](https://unlighthouse.dev) để auditing, đo performance metrics... ở các pages bạn muốn!
+    - [Speedscope](https://github.com/jlfwong/speedscope) để trace performances profiles projects khi cần tối ưu sâu
+
+
+- Tools cho Backend
+
+    - [Artillery]() để chạy load test hoặc seeding dummy data vào môi trường test
 
 ...
 
@@ -100,6 +107,7 @@ II. Tạo tài khoản để dùng và chạy được project
 6. Tạo tài khoản Vercel
 7. Tạo tài khoản PlanetScale
 8. Tạo tài khoản Sentry
+8. Tạo tài khoản IpStack
 
 ### Chạm vào code
 
@@ -110,6 +118,7 @@ II. Tạo tài khoản để dùng và chạy được project
 NEXT_PUBLIC_CLERK_PUBLISHABLE_KEY=
 
 CLERK_SECRET_KEY=
+IP_STACK_KEY=
 ```
 3. Khởi động app và tận hưởng
 
