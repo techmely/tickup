@@ -1,4 +1,4 @@
-import { DomainEvent, type IDomainEvent } from "modules/core/domain/events/domain-event.base";
+import { DomainEvent, type IDomainEvent } from "modules/core/domain-base/events/domain-event.base";
 import { UserRoles } from "../entities/user.types";
 
 export class UserRoleChangedDomainEvent extends DomainEvent {

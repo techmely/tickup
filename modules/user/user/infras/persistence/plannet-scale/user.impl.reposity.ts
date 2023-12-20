@@ -1,5 +1,5 @@
 import type { StringEnum } from "@techmely/types";
-import type { PaginatedQueryParams, Paginated } from "modules/core/domain/repository.port";
+import type { Paginated, PaginatedQueryParams } from "modules/core/domain-base/repository.port";
 import type { UserEntity } from "modules/user/user/domain/entities/user.entity";
 import type { IUserRepository } from "modules/user/user/domain/repo/user.repository";
 

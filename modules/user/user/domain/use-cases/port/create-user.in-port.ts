@@ -1,4 +1,4 @@
-import type { UseCase } from "modules/core/domain/use-cases.port.base";
+import type { UseCase } from "modules/core/domain-base/use-cases.port.base";
 import type { UserEntity } from "../../entities/user.entity";
 import type { CreateUserProps } from "../../entities/user.types";
 

@@ -1,5 +1,5 @@
-import { AggregateRoot } from "../../../core/domain/entities/aggregate.base";
-import type { FileProps } from "./file.types";
+import { AggregateRoot } from "../../../core/domain-base/entities/aggregate.base";
+import type { FileProps } from "../../helpers/file.types";
 
 export class FileEntity extends AggregateRoot<FileProps> {
   validate(): void {

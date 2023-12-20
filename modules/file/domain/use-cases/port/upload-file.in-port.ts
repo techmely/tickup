@@ -1,4 +1,4 @@
-import type { UseCase } from "../../../../core/domain/use-cases.port.base";
+import type { UseCase } from "../../../../core/domain-base/use-cases.port.base";
 import type { FileEntity } from "../../entities/file.entity";
 
 export interface UploadFileCommand {

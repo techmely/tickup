@@ -1,8 +1,8 @@
 import { invariant } from "@techmely/utils";
-import { ValueObject } from "modules/core/domain/entities/value-object.base";
+import { ValueObject } from "modules/core/domain-base/entities/value-object.base";
 import {
-  ArgumentNotProvidedException,
   ArgumentInvalidException,
+  ArgumentNotProvidedException,
 } from "modules/core/exceptions/exceptions";
 
 export interface IUserMetadata {
