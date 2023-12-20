@@ -1,9 +1,9 @@
-import { DomainEvent, IDomainEvent } from "../../../../core/domain/events/domain-event.base";
-import { IUserUpdatedDE } from "../entities/user.types";
+import { DomainEvent, type IDomainEvent } from "modules/core/domain/events/domain-event.base";
+import type { IUserUpdatedDE } from "../entities/user.types";
 
 export class UserUpdatedDomainEvent extends DomainEvent implements IUserUpdatedDE {
   email?: string;
-  unverifiedEmail?: boolean;
+  unverifiedEmail?: string;
   isEmailVerified?: boolean;
   nickname?: string;
   mobile?: string;

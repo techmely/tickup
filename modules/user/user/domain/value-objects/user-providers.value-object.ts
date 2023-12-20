@@ -1,4 +1,4 @@
-import { ValueObject } from "../../../../core/domain/entities/value-object.base";
+import { ValueObject } from "modules/core/domain/entities/value-object.base";
 
 export interface IUserProvider {
   githubId?: string;

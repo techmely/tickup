@@ -1,3 +1,4 @@
+import { ENTITY_ID_LENGTH } from "modules/core/helpers/ids";
 import {
   type Output,
   boolean,
@@ -9,7 +10,6 @@ import {
   optional,
   string,
 } from "valibot";
-import { ENTITY_ID_LENGTH } from "../../../../core/helpers/ids";
 import { UserRoles, UserStatus } from "../entities/user.types";
 
 export const userSchema = object({

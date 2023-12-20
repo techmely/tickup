@@ -1,4 +1,4 @@
-import { ExceptionBase } from "../../../core/exceptions/exception.base";
+import { ExceptionBase } from "modules/core/exceptions/exception.base";
 
 const EMAIL_NOT_FOUND = "USER.EMAIL_NOT_FOUND";
 const USERNAME_NOT_FOUND = "USER.USERNAME_NOT_FOUND";

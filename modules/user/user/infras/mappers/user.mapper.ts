@@ -1,6 +1,6 @@
+import { UniqueEntityID } from "modules/core/domain/entities/unique-entity";
+import type { Mapper } from "modules/core/infra/mapper.base";
 import { parse } from "valibot";
-import { UniqueEntityID } from "../../../../core/domain/entities/unique-entity";
-import type { Mapper } from "../../../../core/infra/mapper.base";
 import { UserEntity } from "../../domain/entities/user.entity";
 import { type UserModel, userSchema } from "../../domain/repo/user.model";
 import { UserMetadata } from "../../domain/value-objects/user-metadata.value-object";

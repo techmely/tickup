@@ -1,5 +1,5 @@
-import mitt, { EventHandlerMap } from "mitt";
-import { EmitDomainEvents } from "./domain-event.types";
+import mitt, { type EventHandlerMap } from "mitt";
+import type { EmitDomainEvents } from "./domain-event.types";
 
 export function mittAsync(all?: EventHandlerMap<EmitDomainEvents>) {
   const instance = mitt<EmitDomainEvents>(all);

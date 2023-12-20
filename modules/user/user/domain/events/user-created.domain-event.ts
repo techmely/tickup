@@ -1,4 +1,4 @@
-import { DomainEvent, type IDomainEvent } from "../../../../core/domain/events/domain-event.base";
+import { DomainEvent, type IDomainEvent } from "modules/core/domain/events/domain-event.base";
 import { type IUserCreatedDE, UserRoles, UserStatus } from "../entities/user.types";
 import { UserMetadata } from "../value-objects/user-metadata.value-object";
 import { UserProvider } from "../value-objects/user-providers.value-object";

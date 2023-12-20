@@ -1,9 +1,9 @@
 import { invariant } from "@techmely/utils";
-import { ValueObject } from "../../../../core/domain/entities/value-object.base";
+import { ValueObject } from "modules/core/domain/entities/value-object.base";
 import {
-  ArgumentInvalidException,
   ArgumentNotProvidedException,
-} from "../../../../core/exceptions/exceptions";
+  ArgumentInvalidException,
+} from "modules/core/exceptions/exceptions";
 
 export interface IUserMetadata {
   openPlatform: string;

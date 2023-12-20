@@ -1,7 +1,7 @@
 import type { StringEnum } from "@techmely/types";
-import type { Paginated, PaginatedQueryParams } from "../../../../../core/domain/repository.port";
-import type { UserEntity } from "../../../domain/entities/user.entity";
-import type { IUserRepository } from "../../../domain/repo/user.repository";
+import type { PaginatedQueryParams, Paginated } from "modules/core/domain/repository.port";
+import type { UserEntity } from "modules/user/user/domain/entities/user.entity";
+import type { IUserRepository } from "modules/user/user/domain/repo/user.repository";
 
 export class UserRepository implements IUserRepository {
   findById(id: string): Promise<Partial<UserEntity>> {

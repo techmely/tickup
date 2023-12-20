@@ -1,5 +1,5 @@
-import { AggregateRoot } from "../../../../core/domain/entities/aggregate.base";
-import { UniqueEntityID } from "../../../../core/domain/entities/unique-entity";
+import { AggregateRoot } from "modules/core/domain/entities/aggregate.base";
+import { UniqueEntityID } from "modules/core/domain/entities/unique-entity";
 import { UserCreatedDomainEvent } from "../events/user-created.domain-event";
 import { type CreateUserProps, type UserProps, UserRoles, UserStatus } from "./user.types";
 
