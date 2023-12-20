@@ -1,6 +1,6 @@
 import { invariant, isEmpty } from "@techmely/utils";
 import { ArgumentNotProvidedException } from "../../exceptions/exceptions";
-import { convertPropsToObject } from "./helpers/object";
+import { convertPropsToObject } from "../../helpers/object";
 
 /**
  * Domain Primitive is an object that contains only a single value

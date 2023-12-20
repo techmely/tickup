@@ -1,5 +1,5 @@
-import { Entity } from "../entity.base";
-import { ValueObject } from "../value-object.base";
+import { Entity } from "../domain-base/entities/entity.base";
+import { ValueObject } from "../domain-base/entities/value-object.base";
 
 function isEntity(obj: unknown): obj is Entity<unknown> {
   /**
