@@ -12,7 +12,7 @@
     "resolveJsonModule": true,
     "isolatedModules": true,
     "verbatimModuleSyntax": true,
-    "noImplicitAny": true,
+    "noImplicitAny": false,
     "jsx": "preserve",
     "incremental": true,
     "emitDecoratorMetadata": true,
@@ -25,7 +25,7 @@
     ],
     "paths": {
       "@/*": ["./src/*"],
-      "server/*": ["ddd/*"],
+      "modules/*": ["./modules/*"],
     }
   },
   "include": ["next-env.d.ts", "typings", "**/*.ts", "**/*.tsx", ".next/types/**/*.ts"],

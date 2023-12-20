@@ -9,7 +9,8 @@
     "start": "next start",
     "lint": "biome check .",
     "lint.perf": "oxlint -D perf",
-    "prepare": "husky install && chmod +x ./node_modules/.bin/biome"
+    "prepare": "husky install && chmod +x ./node_modules/.bin/biome",
+    "test.unit": "vitest --passWithNoTests"
   },
   "dependencies": {
     "@builder.io/partytown": "0.8.1",
