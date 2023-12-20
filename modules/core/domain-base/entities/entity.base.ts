@@ -94,7 +94,7 @@ export abstract class Entity<Props> {
       new ArgumentInvalidException("Entity props should be an object"),
     );
     invariant(
-      Object.keys(props as any).length > MAX_PROPS,
+      Object.keys(props as any).length <= MAX_PROPS,
       new ArgumentOutOfRangeException(
         `The entity props count must smaller than ${MAX_PROPS} properties`,
       ),

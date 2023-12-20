@@ -44,7 +44,7 @@ export abstract class ValueObject<Props> {
 
   #validateProps(props: ValueObjectProps<Props>) {
     invariant(
-      !(isEmpty(props) || (this.#isDomainPrimitive(props) && props.value)),
+      !(isEmpty(props) || (this.#isDomainPrimitive(props) && isEmpty(props.value))),
       new ArgumentNotProvidedException("Property cannot be empty"),
     );
   }

@@ -11,7 +11,7 @@ export interface NormalizedException {
    * information about the exception when throwing.
    * This will make debugging easier.
    */
-  metadata?: unknown;
+  metadata?: Record<string, unknown>;
 }
 
 export abstract class ExceptionBase extends Error {
@@ -26,7 +26,11 @@ export abstract class ExceptionBase extends Error {
    * in application's log files. Only include non-sensitive
    * info that may help with debugging.
    */
-  constructor(readonly message: string, cause?: Error, readonly metadata?: unknown) {
+  constructor(
+    readonly message: string,
+    cause?: Error,
+    readonly metadata?: Record<string, unknown>,
+  ) {
     super(message);
     Error.captureStackTrace(this, this.constructor);
     const ctx = {

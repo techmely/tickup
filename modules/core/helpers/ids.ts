@@ -28,6 +28,6 @@ export function generatePrefixId(prefix = "tu", length = DEFAULT_PREFIX_ID_LENGT
   return `${prefix}_${generateId(length)}`;
 }
 
-export function generateUserId() {
+export function generateUserId(length = DEFAULT_PREFIX_ID_LENGTH) {
   return generatePrefixId("u", length);
 }

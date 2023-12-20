@@ -37,6 +37,10 @@ export abstract class DomainEvent {
       domainEvent,
       new ArgumentNotProvidedException("Domain event props should not be empty"),
     );
+    invariant(
+      domainEvent._metadata && !domainEvent._metadata.timestamp,
+      new ArgumentNotProvidedException("Timestamp should be provided in domain event metadata"),
+    );
     this.id = new UniqueEntityID(generatePrefixId("entity"));
     this.aggregateId = domainEvent.aggregateId;
     this._metadata = {
