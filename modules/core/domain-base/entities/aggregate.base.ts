@@ -27,9 +27,6 @@ export abstract class AggregateRoot<Props> extends Entity<Props> {
     this.domainEvents = [];
   }
 
-  /**
-   * TODO: define logger port here
-   */
   async publishEvents(logger: LoggerPort, emitter: Emitter<EmitDomainEvents>) {
     const promiseEvents = this.domainEvents.map((event) => {
       logger.debug(

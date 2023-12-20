@@ -1,5 +1,5 @@
 import { Kysely } from "kysely";
-import type { UserModel } from "../../../../domain/repo/user.model";
+import type { UserModel } from "modules/user/user/domain/repo/user.model";
 
 type DatabaseTables = {
   user: UserModel;

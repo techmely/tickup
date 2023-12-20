@@ -11,13 +11,13 @@ export class UserCreatedDomainEvent extends DomainEvent implements IUserCreatedD
   mobile: string;
   birthday: string;
   name: string;
-  locale?: string | undefined;
   avatarUrl: string;
-  gender?: string | undefined;
-  provider?: UserProvider | undefined;
   role: UserRoles;
   status: UserStatus;
-  metadata: UserMetadata;
+  locale?: string;
+  gender?: string;
+  provider?: UserProvider;
+  metadata?: UserMetadata;
 
   constructor(props: IDomainEvent<UserCreatedDomainEvent>) {
     super(props);

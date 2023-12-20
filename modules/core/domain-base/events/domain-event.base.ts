@@ -41,7 +41,7 @@ export abstract class DomainEvent {
       domainEvent._metadata && !domainEvent._metadata.timestamp,
       new ArgumentNotProvidedException("Timestamp should be provided in domain event metadata"),
     );
-    this.id = new UniqueEntityID(generatePrefixId("entity"));
+    this.id = new UniqueEntityID(generatePrefixId("de"));
     this.aggregateId = domainEvent.aggregateId;
     this._metadata = {
       correlationId: domainEvent?._metadata?.correlationId,

@@ -24,19 +24,23 @@ export type PaginatedQueryParams = {
 };
 
 export interface RepositoryPort<Entity> {
-  findById(id: string): Promise<Partial<Entity>>;
-  findByKey(key: StringEnum<keyof Entity>): Promise<Partial<Entity>>;
+  findById(id: string): Promise<Entity>;
+  findByKey(key: StringEnum<keyof Entity>): Promise<Entity>;
   findAll(): Promise<Entity[]>;
   findAllByIds(ids: string[]): Promise<Entity[]>;
   findAllPaginated(params: PaginatedQueryParams): Promise<Paginated<Entity>>;
   existsById(id: string): Promise<boolean>;
   count(): Promise<bigint | number>;
 
-  insert(entity: Entity | Entity[]): Promise<void>;
-  insertBulk(entity: Entity | Entity[]): Promise<void>;
+  insert(entity: Entity): Promise<void> | Promise<Entity>;
+  insertBulk(entity: Entity): Promise<void> | Promise<Entity>;
+  insertMany(entities: Entity[]): Promise<void> | Promise<Entity[]>;
+  insertBulkMany(entities: Entity[]): Promise<void> | Promise<Entity[]>;
 
-  update(entity: Entity | Entity[]): Promise<void> | Promise<Entity | Entity[]>;
-  updateBulk(entity: Entity | Entity[]): Promise<void> | Promise<Entity | Entity[]>;
+  update(entity: Entity): Promise<void> | Promise<Entity>;
+  updateBulk(entity: Entity): Promise<void> | Promise<Entity>;
+  updateMany(entities: Entity[]): Promise<void> | Promise<Entity[]>;
+  updateBulkMany(entities: Entity[]): Promise<void> | Promise<Entity[]>;
 
   delete(entity: Entity): Promise<boolean>;
   deleteById(id: string): Promise<boolean>;

@@ -77,7 +77,7 @@ Team gợi ý bạn nên mua sách về đọc để hiểu sâu sắc và để
 
 - Tools cho Backend
 
-    - [Artillery]() để chạy load test hoặc seeding dummy data vào môi trường test
+    - [Artillery](https://www.artillery.io) để chạy load test hoặc seeding dummy data vào môi trường test
 
 ...
 
