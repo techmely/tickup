@@ -2,7 +2,7 @@ import { filesOfProject } from "tsarch";
 import { describe, expect, it } from "vitest";
 
 describe.concurrent("domain boundaries", () => {
-  it("Business logic should not depend on the dal", async () => {
+  it("Business logic should not depend on the application", async () => {
     const rule = filesOfProject()
       .inFolder("*/domain/*")
       .shouldNot()
