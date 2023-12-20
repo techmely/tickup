@@ -15,7 +15,7 @@
         "noSvgWithoutTitle": "off"
       },
       "suspicious": {
-        "noExplicitAny": "warn",
+        "noExplicitAny": "off",
         "noEmptyInterface": "off"
       }
     }
